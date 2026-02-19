@@ -1,7 +1,7 @@
 #!/bin/bash
 
 LOGFILE="provision.log"
-#funcion llamada log donde se hara un append con tee para que no sustituya el tecto y escribira la fecha y el argumento que le pasemos a la funcion
+#funcion llamada log donde se hara un append con tee para que no sustituya el texto y escribira la fecha y el argumento que le pasemos a la funcion
 log(){
     echo "$(date) - $1" | tee -a $LOGFILE
 }
